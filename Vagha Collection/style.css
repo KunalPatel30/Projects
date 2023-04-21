@@ -1,0 +1,576 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-color: #fff;
+}
+.header
+{
+    width: 100%;
+    height: 100px;
+}
+.logo h1
+{
+    color: #424144;
+    text-align: center;
+    line-height: 100px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-shadow: 3px 3px 4px coral;
+    margin-bottom: 10px;
+}
+
+/* -------------------------    navigation   --------------------------- */
+.nav
+{
+    height: 60px;
+    margin: 0 10px;
+    background-color: rgb(250, 115, 66);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.nav ul
+{
+    width: 100%;
+    height: 60px;
+    margin-left: 50px;
+}
+
+.nav ul li
+{
+    display: inline-block;
+    line-height: 60px;
+    list-style: none;
+    padding-left: 30px;
+}
+.nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.nav ul li a:hover
+{
+    color: rgb(241, 75, 14);
+    background-color: rgb(255, 233, 203);
+}
+
+.nav .icon 
+{
+    display: flex;
+    line-height: 60px;
+    list-style: none;
+    padding-right: 30px;
+    margin-right: 50px;
+
+}
+
+.nav .icon a
+{
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+}
+/* ----------------------   navigation end   ------------------------ */
+
+
+
+/* ----------------------   banner   ------------------------ */
+.banner
+{
+    width: 1300px;
+    height: 530px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.box1
+{
+    width: 65%;
+}
+.box2
+{
+    width: 35%; 
+}
+.box3,.box4
+{
+    width: 50%;
+}
+
+.box1,.box2,.box3,.box4
+{
+    height: 250px;
+    padding: 15px;
+}
+
+.box1 img,.box2 img,.box3 img,.box4 img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+/* ----------------------   banner end   ------------------------ */
+
+
+
+/* ----------------------   product   ------------------------ */
+.container
+{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.pheading
+{
+    text-align: center;
+    margin: 15px 0;
+    color: #424144;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+
+.products
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.products .sec-1
+{
+    width: 20%;
+    padding: 0;
+    margin: 10px 20px;
+   
+}
+
+.products .sec-1 img
+{
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.products .sec-1 h3
+{
+    font-weight: 900;
+    font-size: 18px;
+    color: #424144;
+    text-align: center;
+}
+
+.products .sec-1 .box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.products .sec-1 .box .price
+{
+    color: rgb(241, 75, 14);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.products .sec-1 .box .btn
+{
+    font-size: 15px;
+    color:rgb(241, 75, 14);
+    padding: 8px 15px;
+    font-weight: 900;
+    border: 1px solid rgb(241, 75, 14);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.products .sec-1 .box .btn:hover
+{
+    background-color: rgb(241, 75, 14);
+    color: #fff;
+}
+/* ----------------------   product end   ------------------------ */
+
+
+
+/* ----------------------   gallery   ------------------------ */
+.g-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.g-container .heading
+{
+    width: 80%;
+    padding-bottom: 50px;
+}
+.g-container .heading h1
+{
+    font-size: 35px;
+    border-bottom: 2px solid rgb(241, 75, 14);
+    padding-bottom: 10px;
+    color: rgb(241, 75, 14);
+    text-shadow: 1px 1px 2px #000;
+} 
+.g-container .card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.g-container .card .dream
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.g-container .card .dream img
+{
+    width: 100%;
+    padding-bottom: 17px;
+}
+.g-container .g-btn
+{
+    margin: 40px 0 70px 0;
+    background: rgb(241, 75, 14);
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+.g-container .g-btn a
+{
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .g-container .card{
+        flex-direction: column;
+    }
+    .g-container .card .dream{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 643px){
+    .g-container .heading{
+    width: 100%;
+}
+.g-container .heading h1{
+    font-size: 16px;
+    color: rgb(241, 75, 14);
+    text-shadow: 1px 1px 2px #000;
+} 
+}
+/* ----------------------   gallery end  ------------------------ */
+
+
+
+
+/* ----------------------   about   ------------------------ */
+.sec
+{
+    width: 100%;
+    height: auto;
+}
+.sec .container-1
+{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+.container-1 .titel
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+.container-1 .titel h1
+{
+    font-size: 35px;
+    padding-bottom: 10px;
+    color: rgb(250, 115, 66);
+    text-shadow: 1px 1px 2px #000;
+    border-bottom: 2px solid rgb(250, 115, 66);
+}
+.discription
+{
+    float: left;
+    width: 55%;
+}
+.image-part
+{
+    float: right;
+    width: 40%;
+}
+.image-part img
+{
+    width: 100%;
+    height: auto;
+}
+.discription .article h3
+{
+    color: #a3a3a3;
+    font-size: 17px;
+}
+.discription .article p
+{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.discription .article .button
+{
+    margin-top: 50px;
+}
+.discription .article .button a
+{
+   text-decoration: none;
+   padding: 8px 25px;
+   background-color: rgb(250, 115, 66);
+   color: #fff; 
+   border-radius: 40px;
+   font-size: 18px;
+   letter-spacing: 1px;
+}
+.discription .article .button a:hover,.container-1 .social i:hover
+{
+    background-color: #fff;
+    color: rgb(250, 115, 66);
+    border: 1px solid rgb(250, 115, 66);
+}
+.container-1 .social
+{
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.container-1 .social i
+{
+    color: #fff;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(250, 115, 66);
+    line-height: 45px;
+    margin: 0px 5px;
+}
+@media screen and (max-width: 768px){
+    .sec .container-1{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .discription{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-part{
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-part img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container-1 .titel h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container-1 .article .button{
+        text-align: center;
+    }
+    .container-1 .article .button a{
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+    .container-1 .social i{
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}
+
+/* ----------------------   about end   ------------------------ */
+
+
+
+/* ----------------------  contact  ------------------------ */
+.contact-sec
+{
+    padding: 40px 0px;
+    padding-bottom: 15px;
+}
+.contact-sec h1
+{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(250, 115, 66);
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 30px;
+}
+.contact-sec h1::after{
+    content: "";
+    height: 2px;
+    width: 1100px;
+    background-color: rgb(250, 115, 66);
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 2px solid rgb(250, 115, 66);
+    padding: 10px 40px;
+    color: rgb(250, 115, 66);
+    transition: 0.5s;
+    outline: none;
+    font-size: 15px;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.4);
+}
+textarea .contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: rgb(250, 115, 66);
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.contact-form-btn:hover{
+    background-color: #fff;
+    color: rgb(250, 115, 66);
+    border: 1px solid rgb(250, 115, 66);
+}
+/* ----------------------  contact end   ------------------------ */
+
+
+
+
+/* ----------------------   footer   ------------------------ */
+.footer
+{
+    width: 100%;
+    background-color: rgb(250, 115, 66);
+    padding: 30px 20px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+
+}
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+.section
+{
+    width: 25%;
+    padding: 0 20px;
+}
+.section h4
+{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+ul
+{
+    list-style: none;
+}
+.section ul li a
+{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+}
+.section .social-media a
+{
+    font-size: 18px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color:#5c5a5e;
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.section .social-media a:hover
+{
+    background-color: #fff;
+    color: rgb(250, 115, 66);
+}
+.outer-footer
+{
+    height: 50PX;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(241, 75, 14);
+    background-color: rgb(255, 233, 203);
+    letter-spacing: 1PX;
+}
+/* ----------------------   footer end   ------------------------ */
+

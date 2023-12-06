@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+.main-body{
+    background: #808080;
+}
+
+/* ----------------navigation------------------ */
+#navbar{
+    background-color: #f56260;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#logo{
+    font-size: 23px;
+    color: #fff;
+}
+#logo img{
+    margin-bottom: 15px;
+}
+#logo span.s{
+    color: #fec140;
+    font-size: 30px; 
+}
+#logo span.c{
+    color: #8ecdff;
+    font-size: 30px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: #8ecdff;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: #fec140;
+    color: #fff;
+    border-radius: 5px;
+}
+.icon{
+    margin-right: 25px;
+}
+.icon img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icon img:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+/* ----------------navigation end------------------ */
+
+
+/* ----------------titel------------------ */
+.home{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/background2.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px #f56260;
+}
+.content h2{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 3px 3px 4px #f56260;
+    font-weight: bold;
+}
+.changetext::after{
+    content: ' ';
+    color: #fec140;
+    animation: changetext 8s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: "Birthday Cake";}
+    20%{content: "Party Cake";}
+    50%{content: "Cup Cake";}
+    60%{content: "Slice Cake";}
+    100%{content: "Donuts";}
+}
+.content p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+@media screen and (max-width:800px){
+    .content h3
+    {
+        font-size: 40px;
+    }
+    .content h2
+    {
+        font-size: 40px;
+    }
+    .content
+    {
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width:330px){
+    .content h3
+    {
+        font-size: 30px;
+    }
+    .content h2
+    {
+        font-size: 30px;
+    }
+}
+/* ----------------titel end------------------ */
+
+
+/* ----------------card------------------ */
+#box{
+    margin-top: 20px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px #000;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+/* ---------------card end------------------ */
+
+
+/* ----------------banner------------------ */
+.banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Images/banner2.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 0px 10px #000;
+    margin-top: 50px;
+}
+.banner .img{
+    flex: 1 1 400px;
+}
+.banner .img img{
+    width: 100%;
+}
+.banner .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.banner .content h3{
+    color: #fec140;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+.banner .content h2{
+    font-size: 45px;
+    color: #fec140;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+.banner .content p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+/* ----------------banner end------------------ */
+
+
+/* -------------product------------------ */
+#product-card{
+    margin-bottom: 60px;
+}
+#product-card h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #f56260;
+    text-shadow: 3px 3px 4px #000;
+    border-bottom: 2px solid #f56260;
+}
+#product-card .card{
+    background-color: #f56260;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-card .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img{
+    background-color: #000;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+#product-card h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#product-card p{
+    color: #000;
+    font-weight: bold;
+}
+#product-card h6{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+#product-card h6 span button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-card h6 span button:hover{
+    background-color: #000;
+    color: white;
+}
+/* -------------product end------------------ */
+
+
+/* ----------------gallery------------------ */
+#gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#gallery h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #f56260;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #f56260;
+}
+#gallery .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#gallery .overlay{
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+#gallery .card:hover .overlay{
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.5s ease;
+}
+/* ----------------gallery end------------------ */
+
+
+/* ----------------about------------------ */
+#about{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#about .row
+{
+    margin: 40px 0;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #f56260;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #f56260;
+}
+#about .card{
+    background-color: #f56260;
+    box-shadow: 0px 0px 5px black;
+}
+#about p{
+    color: #000;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+#btn button{
+    width: 150px;
+    height: 35px;
+    background-color: #f56260;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px){
+    #about p{
+        font-size: 20px;
+    }
+}
+/* ----------------about end------------------ */
+
+
+/* ----------------contact------------------ */
+#contact{
+    margin-top: 80px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #f56260;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #f56260;
+}
+#contact input{
+    background-color: #f56260;
+    margin-top: 30px;
+    padding: 15px 8px;
+}
+#contact input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+#contact textarea{
+    background-color: #f56260;
+    margin-top: 30px;
+}
+#contact textarea::placeholder{
+    color: white;
+    font-size: 20px;
+}
+#messagebtn{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+#messagebtn button{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#messagebtn button:hover{
+    background-color: #f56260;
+}
+/* ----------------contact end------------------ */
+
+
+/* ----------------footer------------------ */
+#footer{
+    width: 100%;    
+    background-color: #f56260;
+    box-shadow: 0px 0px 5px black;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+    font-size: 20px;
+}
+.icons i{
+    color: #fff;
+    border-radius: 50px;
+    font-size: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.icons i:hover{
+    color: #41e2da;
+    text-shadow: 1px 1px 1px #000;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.owner{
+    color: white;
+    font-size: 18px;
+}
+.owner span{
+    color: #8ecdff;
+    text-shadow: 1px 1px 1px #000;
+}
+/* ----------------footer end------------------ */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ----------------arrow btn------------------ */
+.arrow{
+    position: fixed;
+    background-color: #fec140;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}

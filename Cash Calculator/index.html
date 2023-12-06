@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="alert alert-success p-2">Cash Calculator</h2>
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/2000.jpg" id="price" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input1" name="2000" value="0"  class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" value="" readonly id="content1">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/500.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input2" name="500" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content2">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/200.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input3" name="200" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content3">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/100.png" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input4" name="100" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content4">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/50.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input5" name="50" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content5">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/20.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input6" name="20" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content6">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/10.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input7" name="10" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content7">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/5.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input8" name="5" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content8">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/2.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input9" name="2" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content9">0</span>
+            </div>
+        </div>
+
+        <div class="row note">
+            <div class="col-4">
+                <img src="./Images/1.jpg" class="img-fluid img-rupee" alt="">
+            </div>
+            <div class="col-4">
+                <input type="text" id="input10" name="1" class="form-control border-3 border-primary" placeholder="0">
+            </div>
+            <div class="col-4">
+                <span class="alert alert-success equal pt-2 pb-2 ps-1 pe-1">=</span>
+                &nbsp;
+                <span class="alert alert-success p-2 amount" id="content10">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid note">
+        <div class="alert alert-success ps-3 pe-0 pt-1 pb-1 mt-1">
+            <h3>Total Cash: <span id="total-cash"></span></h3>
+        </div>
+        <div class="alert alert-success ps-3 pe-0 pt-1 pb-1 mt-1">
+            <h4>Total Note's: <span id="total-notes"></span></h4>
+        </div>
+
+        <div class="alert alert-success ps-3 pe-0 pt-1 pb-1 mt-1">
+            <h5>In Text: <span id="total-cash-words"></span></h5>
+        </div>
+    </div>
+
+    <script src="cash.js"></script>
+</body>
+</html>
